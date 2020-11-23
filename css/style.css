@@ -1,0 +1,108 @@
+body{
+    /*font-family: 'Great Vibes', cursive;*/
+
+}
+header{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("../images/bgc.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
+}
+.banner-heading:first-letter{
+    font-family: 'Great Vibes', cursive;
+    font-size: 8rem;
+    margin-right: 20px;
+}
+.banner-heading img{
+    animation-name: banning;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes banning {
+    0%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    60%{
+        transform: scale(1.05);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.common-title{
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all .5s;
+}
+.common-title:first-letter{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    margin-right: 10px;
+    font-style: normal;
+}
+.common-title:hover{
+    transform: translate(-5px,-3px);
+    text-shadow: 2px 5px 20px #aaa;
+}
+.gallery-img{
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+.gallery-img:hover{
+    transform: scale(1.05);
+}
+.famous-programming{
+    background-image:linear-gradient(rgba(250,250,250,.8),rgba(250,250,250,0.9)),
+    url("../images/books.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.suggested-books{
+    height: 100vh;
+    background-image: url('../images/wood.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.books{
+    position: relative;
+    height: 50vh;
+}
+.book{
+    position: absolute;
+    width: 35%;
+    box-shadow: 5px 5px 15px #444;
+    border-right: 5px solid #777;
+    border-bottom: 10px solid #444;
+}
+.book-1{
+    top: 5%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+.book-2{
+    top: 20%;
+    left: 50%;
+    transform: rotate(40deg);
+}
+.book-3{
+    top: 40%;
+    left: 40%;
+    transform: rotate(55deg);
+}
+.book-4{
+    top: 35%;
+    left: 10%;
+    transform: rotate(-38deg);
+}
